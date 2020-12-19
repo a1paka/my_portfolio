@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+		<link href=".source/css/style.min.css" rel="stylesheet">
+    <title>Портфолио</title>
+</head>
+<body>
+
+    <header>
+			<a href="#" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></a>
+				<nav class="main-nav main-nav--closed main-nav--nojs">
+							<ul class="main-nav__list site-list">
+								<li class="site-list__item"><a href="#about">Обо мне</a></li>
+								<li class="site-list__item"><a href="#technologies">Технологии</a></li>
+								<li class="site-list__item"><a href="#projects">Проекты</a></li>
+								<li class="site-list__item"><a href="#contacts">Контакты</a></li>
+							</ul>
+			</nav>
+				<section class="home">
+					<div class="home__wrapper">
+					<div class="home__about">
+						<p class="home__text">Привет! Меня зовут Анна Зерова.</p>
+						<h1 class="home__label">Начинающий Фронтенд-разработчик (Junior Frontend-developer)</h1>
+					</div>
+				</div>
+				</section>
+    </header>
+
+    <main>
+        <section class="main-blocks">		
+            <div class="main-blocks__container">
+								<h2 class="main-blocks__container-title"><a name="about">Обо мне</a></h2>
+								<div class="main-blocks__container-wrap">
+								<div class="main-blocks__about">
+									<img class="main-blocks__photo" src="./source/img/photo.jpg" alt="фотография" width="200" height="266">
+									<p class="main-blocks__about-text">Год назад начала свое плотное погружение во фронтенд-разработку, и занимаюсь этим и по сей день.
+										В качестве начального опыта проходила курсы от html-academy, где закончила два профессиональных курса HTML и CSS, а так же JavaScript.
+									Стараюсь не стоять на месте и изучать что-то новое для себя!</p>
+								</div>
+								</div>
+							</div>
+            <div class="main-blocks__container">
+								<h2 class="main-blocks__container-title"><a name="technologies">Технологии</a></h2>
+								<div class="main-blocks__techn">
+									<div class="main-blocks__techn-block">
+										<p class="main-blocks__text">Создание страниц на основе макетов из: Photoshop, Avocode, Figma</p>
+										<p class="main-blocks__text">Адаптивная и кроссбраузерная верстки</p>
+										<p class="main-blocks__text">Использование методологии БЭМ</p>
+										<p class="main-blocks__text">Pixel Perfect</p>
+										<p class="main-blocks__text">Базовое понимание Java Script</p>
+										<p class="main-blocks__text">Сборка проектов с использованием Gulp/Webpack</p>
+									</div>
+									<div class="slider">
+										<div class="slider__wrapp">
+										<div class="slider__item"><img src="./source/img/html5.svg" width="55" height="50" alt="html5"></div>
+										<div class="slider__item"><img src="./source/css3.svg" width="40" height="40" alt="css3"></div>
+										<div class="slider__item"><img src="./source/img/javascript.svg" width="40" height="40" alt="js"></div>
+										<div class="slider__item"><img src="./source/img/bootstrap.svg" width="45" height="50" alt="boostrap4"></div>
+										<div class="slider__item"><img src="./source/img/sass.svg" width="55" height="50" alt="sass"></div>
+										<div class="slider__item"><img src="./source/img/gulp.svg" width="25" height="40" alt="gulp"></div>
+										<div class="slider__item"><img src="./source/img/webpack.svg" width="50" height="40" alt="webpack"></div>
+										<div class="slider__item"><img src="./source/img/git.svg" width="50" height="40" alt="git"></div>
+									</div>
+										<a class="slider__previous" onclick="previousSlide()">&#10094;</a>
+										<a class="slider__next" onclick="nextSlide()">&#10095;</a>
+								</div>
+								</div>
+						</div>
+
+						<div class="main-blocks__container">
+							<h2 class="main-blocks__container-title"><a name="projects">Проекты</a></h2>
+							<div class="portfolio">
+								<div class="portfolio__item">
+									<h3 class="portfolio__title">Сайт туристического городка в штате Аризона</h3>
+									<a href="https://a1paka.github.io/1019657-sedona-26/" class="portfolio__button"><img class="portfolio__item-image" src="./source/img/sedona.jpg" width="335" height="330" alt="Седона"></a>
+									<p class="portfolio__deskr">Верстка на флексах, кроссбраузерность, оптимизация графики</p>
+								</div>
+									<div class="portfolio__item">
+										<h3 class="portfolio__title">Интернет-магазин фитнес еды для котиков</h3>
+										<a href="https://a1paka.github.io/1019657-cat-energy-19/" class="portfolio__button"><img class="portfolio__item-image" src="./source/img/cat-energy.jpg" width="335" height="330" alt="Седона"></a>
+										<p class="portfolio__deskr">Верстка с использованием препроцессора Sass. Адаптив. Сборка и автоматизация проекта и помощью Gulp</p>
+									</div>
+									<div class="portfolio__item">
+										<h3 class="portfolio__title">Сервис для размещения объявлений (JS)</h3>
+										<a href="https://a1paka.github.io/1019657-keksobooking-20/" class="portfolio__button"><img class="portfolio__item-image" src="./source/img/keksobooking.jpg" width="335" height="330" alt="Седона"></a>
+										<p class="portfolio__deskr">Генерирование DOM элементов по шаблону и наполнение их данными. Работа с сетью. Валидация форм</p>
+									</div>
+									<div class="portfolio__item">
+										<h3 class="portfolio__title">Рекламный сайт компании Uber partners</h3>
+										<a href="https://a1paka.github.io/udemy-bootstrap/" class="portfolio__button"><img class="portfolio__item-image" src="./source/img/UBER_course.jpg" width="335" height="330" alt="Седона"></a>
+										<p class="portfolio__deskr">Создание сайта с использованием технологии Bootstrap4</p>
+									</div>
+							</div>
+						</div>
+        </section>
+		</main>
+		
+		<footer class="page-footer">
+			<h2 class="page-footer__title"><a name="contacts">Контакты</a></h2>
+			<div class="page-footer__contacts">
+				<a class="page-footer__link" href="https://github.com/a1paka/"><img src="./source/img/github.svg" width="20" height="20" alt="гитхаб"></a>
+				<a class="page-footer__link" href="https://www.linkedin.com/in/anna-zerova-87aa021b3/"><img src="./source/img/linkedin.svg" width="20" height="20" alt="ликедин"></a>
+				<a class="page-footer__link" href="mailto:anya_aki@mail.ru"><img src="./source/img/mail.svg" width="20" height="20" alt="почта"></a>
+				<a class="page-footer__link" href="https://tlgg.ru/a1paka"><img src="./source/img/telegram.svg" width="20" height="20" alt="телеграм"></a>
+			</div>
+		</footer>
+
+		<script src="./js/main.min.js"></script>
+</body>
+</html>

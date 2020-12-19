@@ -1,0 +1,145 @@
+.main-blocks {
+	padding: 0;
+	margin: 0;
+
+  &__container-wrap {
+		padding: 0 30px;
+	}
+
+	&__photo {
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	
+	&__container-title {
+		position: relative;
+		font-size: 25px;
+		font-weight: 300;
+		color: $another-text-color;
+		margin: 25px 0;
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 75px;
+			height: 1px;
+			background-color: $another-text-color;
+			top: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
+		}
+	}
+
+	&__about-text {
+		font-size: 17px;
+		line-height: 1.2;
+		margin: 20px 0;
+		text-align: center;
+	}
+
+	&__techn {
+		background-color: #f7f2f2;
+	}
+
+	&__techn-block {
+		padding-top: 25px;
+	}
+
+	&__pic:hover {
+		-webkit-transform: scale(1.2);
+  	-ms-transform: scale(1.2);
+  	transform: scale(1.2);
+	}
+
+	&__text {
+		position: relative;
+		font-size: 16px;
+		line-height: 1.2;
+		text-align: center;
+		margin: 0 0 14px 0;
+	}
+
+	&__text::before {
+		position: absolute;
+		content: "";
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $another-text-color;
+		top: -8px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.main-blocks {
+		&__photo {
+			display: block;
+			margin: 0 10px 0 30px;
+		}
+
+		&__about {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+
+		&__techn-block {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0 auto;
+			padding: 0 30px;
+		}
+
+		&__text {
+			font-size: 18px;
+			line-height: 1.2;
+			width: 180px;
+			border: 1px dotted $another-text-color;
+			padding: 15px;
+			margin: 15px 10px;
+		}
+
+		&__text::before {
+			width: 7px;
+			height: 7px;
+			top: -3px;
+			left: 50%;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.main-blocks {
+		padding: 0;
+		margin: 0;
+
+		&__techn-block {
+			padding: 35px 120px 0 120px;
+		}
+
+		&__text {
+			font-size: 18px;
+			line-height: 1.2;
+			width: 200px;
+			margin-right: 50px;
+		}
+
+		&__about-text {
+			font-size: 17px;
+			line-height: 1.2;
+			margin: 40px 50px;
+			text-align: center;
+		}
+	
+		&__container-wrap {
+			padding: 0 120px;
+		}
+	}
+}
