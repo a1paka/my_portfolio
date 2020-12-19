@@ -1,0 +1,49 @@
+.home {
+  position: relative;
+  background: url("../img/laptop.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cec9c6;
+  padding: 0;
+  height: 570px;
+	background-position: 60% -80px;
+	
+  &__wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__label {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 24px;
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+	.home {
+		&__text {
+			font-size: 24px;
+		}
+		&__label {
+			font-size: 29px;
+			line-height: 1;
+			padding: 0 60px;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.site-list {
+  text-align: center;
+  text-transform: uppercase;
+	
+  &__item a {
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    width: 50vw;
+  }
+
+  &__item a:hover,
+  &__item a:active {
+    color: #3d4e3f;
+  }
+
+  &__item {
+		padding-top: 10px;
+    padding-bottom: 10px;
+
+		&:hover {
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    text-align: center;
+    text-transform: uppercase;
+    
+    &__item a {
+      display: block;
+      width: 150px;
+    }
+  }
+}
