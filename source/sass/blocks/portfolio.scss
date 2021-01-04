@@ -1,4 +1,6 @@
 .portfolio {
+	padding: 0 30px;
+	
 	&__title {
 		font-size: 20px;
 		font-weight: 200;
@@ -17,8 +19,7 @@
 
 	&__item {
 		text-align: center;
-		margin: 15px 0;
-		padding: 0 30px;
+		margin: 10px;
 	}
 
 	&__describe {
@@ -48,12 +49,14 @@
 		padding: 0 45px 0 45px;
 
 		&__item {
-			width: 305px;
+			width: 316px;
 			padding: 0;
 			margin-bottom: 15px;
 		}
 
 		&__title {
+			color: $another-text-color;
+			text-align: center;
 			padding: 0 20px;
 			margin: 0 0 10px 0;
 		}
@@ -67,7 +70,6 @@
 
 @media (min-width: $desktop-width) {
 	.portfolio {
-		justify-content: flex-start;
 		padding: 0 80px;
 
 		&__item {
