@@ -2,19 +2,13 @@
 	&__title {
 		font-size: 20px;
 		font-weight: 200;
-		padding: 0 30px;
+		padding: 0 px;
 		margin: 0 0 5px 0;
-	}
-
-	&__deskr {
-		font-size: 14px;
-		text-align: center;
-		padding: 0 40px;
-		margin: 0 0 15px 0;
+		text-align: left;
 	}
 
 	&__item-image {
-		width: 309px;
+		width: 315px;
 		height: 270px;
 		border: 1px solid #272727;
 		cursor: pointer;
@@ -22,11 +16,26 @@
 	}
 
 	&__item {
-		position: relative;
 		text-align: center;
-		display: block;
-		margin-bottom: 10px;
+		margin: 15px 0;
 		padding: 0 30px;
+	}
+
+	&__describe {
+		position: relative;
+		margin: 0 auto;
+		width: 315px;
+	}
+
+	&__describe-text {
+		position: absolute;
+		font-size: 14px;
+		color: white;
+		text-align: left;
+		background-color: rgba(0,0,0,0.9);
+		bottom: 0;
+		width: 300px;
+		padding: 5px 8px;
 	}
 }
 
@@ -36,38 +45,40 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		padding: 0 10px 0 30px;
+		padding: 0 45px 0 45px;
 
 		&__item {
 			width: 305px;
 			padding: 0;
-			margin-right: 20px;
 			margin-bottom: 15px;
 		}
 
 		&__title {
-			padding: 0;
-			margin: 0 0 15px 0;
+			padding: 0 20px;
+			margin: 0 0 10px 0;
 		}
 
-		&__deskr {
-			font-size: 16px;
-			text-align: center;
-			margin: 5px 0 10px 0;
-			padding: 0;
+		&__describe-text {
+			width: 286px;
+			padding: 5px 15px;
 		}
 	}
 }
 
 @media (min-width: $desktop-width) {
 	.portfolio {
-		justify-content: space-around;
-		padding: 0 80px 0 120px;
+		justify-content: flex-start;
+		padding: 0 80px;
 
 		&__item {
-			width: 330px;
-			margin-bottom: 20px;
-			margin-right: 40px;
+			width: 300px;
+			margin: 0 40px 20px 40px;
+		}
+
+		&__describe-text {
+			width: 287px;
+			bottom: 0;
+			left: 0;
 		}
 	}
 }

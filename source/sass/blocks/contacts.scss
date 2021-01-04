@@ -1,0 +1,62 @@
+.contacts {
+  &__header {
+    background: url("../img/laptop.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cec9c6;
+    height: 100px;
+    background-position: 40% -110px;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  &__list-wrapper {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 2px dashed #111;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 10px 10px 35px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__link-img {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    color: $main-text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    &__header {
+      height: 150px;
+      background-position: 30% -150px;
+      padding: 0;
+      margin-top: 40px;
+    }
+  }
+}
