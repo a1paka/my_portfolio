@@ -1,11 +1,12 @@
 .portfolio {
+	margin: 0 auto;
+	max-width: 380px;
+
 	&__title {
 		font-size: 20px;
 		font-weight: 200;
 		color: $another-text-color;
-		text-align: center;
 		margin: 15px 0 10px 0;
-		text-align: center;
 	}
 
 	&__item-image {
@@ -13,29 +14,24 @@
 		height: 270px;
 		border: 1px solid #272727;
 		cursor: pointer;
-		margin: 0 auto;
 	}
 
 	&__item {
-		text-align: center;
 		padding: 0 30px;
 	}
 
 	&__describe {
 		position: relative;
-		margin: 0 auto;
-		width: 315px;
 	}
 
 	&__describe-text {
 		position: absolute;
 		font-size: 14px;
 		color: white;
-		text-align: left;
 		background-color: rgba(0,0,0,0.9);
-		bottom: 0;
 		width: 300px;
 		padding: 5px 8px;
+		bottom: 10px;
 	}
 }
 
@@ -44,18 +40,19 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 0 45px 0 45px;
+		max-width: 768px;
 
 		&__item {
 			width: 316px;
 			padding: 0;
 			margin-bottom: 15px;
+			margin-left: 14px;
+			flex: 1 0 auto;
 		}
 
 		&__title {
-			padding: 0 20px;
-			margin: 0 0 10px 0;
+			margin: 17px 0 10px 0;
+			text-align: center;
 		}
 
 		&__describe-text {
@@ -67,11 +64,17 @@
 
 @media (min-width: $desktop-width) {
 	.portfolio {
-		padding: 0 80px;
+		max-width: 750px;
+
+		&__title {
+			width: 300px;
+			padding: 0;
+			text-align: center;
+		}
 
 		&__item {
-			width: 300px;
-			margin: 0 40px 20px 40px;
+			margin-bottom: 25px;
+			margin-left: 25px;
 		}
 
 		&__describe-text {

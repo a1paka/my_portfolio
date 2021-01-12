@@ -67,15 +67,25 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    &__list {
-      padding: 10px 50px;
+    &__header {
+      margin: 0;
+      padding: 0;
+      height: 230px;
+    }
+
+    &__list-wrapper {
+      width: 76%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 1px dashed #111;
+      border-right: 1px dashed #111;
+      background-color: rgb(245, 244, 244);
     }
 
     &__link {
       display: flex;
       align-items: center;
     }
-  
 
     &__link-img {
       width: 18px;
