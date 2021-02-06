@@ -11,3 +11,40 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove("main-nav--opened");
   }
 });
+
+
+$('.slider').slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  centerMode: true,
+  centerPadding: "0",
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+				

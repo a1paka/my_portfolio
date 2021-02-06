@@ -1,0 +1,119 @@
+.slider {
+	position: relative;
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	&__title {
+		font-size: 20px;
+		font-weight: 200;
+		color: $another-text-color;
+		margin: 15px 0 0 0;
+		height: 50px;
+	}
+
+	&__item-image {
+		position: relative;
+		width: 316px;
+		height: 270px;
+		cursor: pointer;
+	}
+
+	&__describe {
+		position: relative;
+	}
+
+	&__describe-text {
+		position: absolute;
+		font-size: 14px;
+		color: white;
+		background-color: rgba(0,0,0,0.9);
+		text-align: left;
+		padding: 5px 15px;
+		bottom: 5px;
+	}
+}
+
+.slider .slick-arrow {
+  font-size: 0;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-arrow.slick-prev {
+  position: absolute;
+  background: url("../img/arrow-prev.svg") 0 0 no-repeat;
+  width: 19px;
+	height: 20px;
+	top: 55%;
+	left: 5px;
+}
+
+.slider .slick-arrow.slick-next {
+  position: absolute;
+  background: url("../img/arrow-next.svg") 0 0 no-repeat;
+  width: 19px;
+	height: 20px;
+	top: 55%;
+	right: 0;
+}
+
+@media (min-width: $tablet-width) {
+	.slider {
+		max-width: 768px;
+
+		&__describe {
+			display: block;
+			text-align: center;
+			width: 320px;
+			margin: 0 auto;
+		}
+
+		&__item-image {
+			width: 350px;
+			height: 300px;
+			cursor: pointer;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+		&__title {
+			margin: 17px 0 10px 0;
+			text-align: center;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.slider {
+		&__title {
+			padding: 0;
+			text-align: center;
+		}
+
+		&__describe {
+			width: 400px;
+		}
+
+		&__describe-text {
+			width: 370px;
+		}
+
+		&__item-image {
+			width: 400px;
+			height: 350px;
+			cursor: pointer;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+}
