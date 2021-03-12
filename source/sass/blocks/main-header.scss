@@ -1,0 +1,97 @@
+.main-header {
+  &__hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 12px;
+    z-index: 2;
+    cursor: pointer;
+  
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $main-color;
+      margin-bottom: 3px;
+      transition: 0.5s all;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        background-color: #d55448;
+      }
+    }
+  }
+
+  &__hamburger-active {
+    span {
+      margin-bottom: -2px;
+      &:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+      }
+    }
+  }
+
+  &__wrapper {
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url("../img/laptop.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: 40% -80px;
+    padding: 0;
+  }
+
+  &__info-name,
+  &__info-about {
+    margin: 0;
+    padding: 0 10px;
+    color: $main-color;
+    text-align: center;
+  }
+
+  &__info-name {
+    position: relative;
+    color: $main-color;
+    top: 70px;
+    left: 0;
+  }
+
+  &__info-about {
+    position: relative;
+    top: 110px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    &__hamburger {
+      display: none;
+    }
+
+    &__wrapper {
+      height: 300px;
+    }
+
+    &__info-name {
+      font-size: 40px;
+      top: 150px;
+      left: 0;
+    }
+
+    &__info-about {
+      font-size: 18px;
+      position: relative;
+      top: 170px;
+    }
+  }
+}

@@ -1,95 +1,65 @@
 .main-nav {
   position: fixed;
-  z-index: 1;
-  left: -320px;
-  transition: left 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(0,0,0, .9);
+  list-style: none;
+  transition: 0.5s all;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
 
-  &__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+  &__item {
+    padding-right: 0;
+    margin: 20px 0;
   }
 
-  &__toggle {
-    position: fixed;
-    display: block;
-    background-color: #3d4e3f;
-    width: 25px;
-    height: 25px;
-    border-radius: 15%;
-    cursor: pointer;
-    top: 6px;
-    left: 2px;
-    z-index: 2;
+  &__link {
+    position: relative;
+    font-size: 16px;
+    color: $main-color;
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 15px;
-      height: 2px;
-      background-color: white;
-      top: 7px;
-      left: 5px;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 15px;
-      height: 2px;
-      background-color: white;
-      top: 15px;
-      left: 5px;
+    &:hover {
+      color: white;
+      border-bottom: 2px solid #d55448;
     }
   }
 
-  &--opened {
-    position: fixed;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
-		width: 50%;
-		height: 100vh;
-    top: 0;
+  &__active {
     left: 0;
   }
 }
 
-  @media (max-width: $mobile-width-only) {
-    .main-nav--closed .site-list__item {
-      display: none;
-    }
-  
-    .main-nav--closed .user-list__item {
-      display: none;
-    }
-  
-    .main-nav--nojs .main-nav__toggle {
-      display: none;
-    }
-  
-    .main-nav--nojs .main-nav__wrapper {
-      position: static;
-      min-height: 0;
-    }
-  
-    .main-nav--nojs .site-list__item {
-      display: block;
-    }
-  }
-
 @media (min-width: $tablet-width) {
   .main-nav {
-    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    height: 30px;
+    left: 0;
 
-    &__toggle {
+    &__item:nth-child(4) {
       display: none;
     }
 
-    &__list {
-      display: none;
+    &__item {
+      margin: 0 40px 0 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) { 
+  .main-nav {
+    &__link {
+      position: relative;
+      font-size: 18px;
+      color: $main-color;
     }
   }
 }

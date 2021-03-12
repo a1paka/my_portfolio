@@ -1,85 +1,63 @@
 .contacts {
-  &__header {
-    background: url("../img/laptop.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cec9c6;
-    height: 100px;
-    background-position: 40% -110px;
-    padding: 0;
-    margin-top: 40px;
-  }
-
-  &__list-wrapper {
-    position: fixed;
-    background-color: #fff;
-    width: 100%;
-    border-top: 1px dashed #111;
-    border-bottom: 1px dashed #111;
-    margin: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
   &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 10px 10px 10px 35px;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-  }
-
-  &__link-img {
-    width: 15px;
-    height: 15px;
-  }
-
-  &__description {
-    font-size: 14px;
-    margin: 0 0 0 5px;
-    color: $main-text-color;
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    &__header {
-      height: 150px;
-      background-position: 30% -150px;
+    &__link {
+      display: flex;
+      align-items: center;
+      margin: 0 40px 0 40px;
       padding: 0;
-      margin-top: 40px;
+    }
+  
+    &__link-img {
+      width: 15px;
+      height: 15px;
+    }
+  
+    &__description {
+      font-size: 16px;
+      margin: 0 0 0 5px;
+      color: $another-color;
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
+    &__list-wrapper {
+      position: fixed;
+      background-color: #fff;
+      width: 100%;
+      border-top: 1px dashed #111;
+      border-bottom: 1px dashed #111;
+      margin: 0;
+      top: 30px;
+      left: 0;
+      z-index: 1;
+    }
+    
     &__list {
-      padding: 10px 30px;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5px 0 5px 0;
+      padding: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    &__header {
-      margin: 0;
-      padding: 0;
-      height: 230px;
-    }
-
     &__list-wrapper {
       width: 76%;
       left: 50%;
       transform: translateX(-50%);
       border-left: 1px dashed #111;
       border-right: 1px dashed #111;
-      background-color: rgb(245, 244, 244);
     }
 
     &__link {
