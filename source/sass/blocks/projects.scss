@@ -59,7 +59,7 @@
     padding: 0 40px 40px 40px;
 
     &__item {
-      width: inherit;
+      width: 410px;
     }
 
     &__item-title {
@@ -93,7 +93,6 @@
     }
 
     &__item {
-      width: 400px;
       margin-right: 20px;
     }
   }
@@ -118,6 +117,5 @@
     &__describe-text {
       font-size: 16px;
     }
-
   }
 }
