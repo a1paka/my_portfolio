@@ -1,105 +1,29 @@
 .projects {
   margin: 40px 0 0 0;
-  padding: 0 20px;
+  padding: 0;
 
   &__title {
     padding-bottom: 5px;
     border-bottom: 1px solid #ffa577;
   }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__item {
-    width: 280px;
-    margin-top: 20px;
-  }
-
-  &__item-title {
-    font-weight: 400;
-    margin: 10px 0 0 0;
-  }
-
-  &__item-image {
-    box-shadow: 0 0 18px rgba(0,0,0,0.7);
-  }
-
-  &__describe-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: $another-color;
-  }
-
-  &__describe-text img {
-    margin-right: 15px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .projects {
-    padding: 0 40px 40px 40px;
+    margin-top: 20px;
 
-    &__item {
-      width: 500px;
-    }
-
-    &__item-title {
-      font-size: 19px;
-    }
-
-    &__describe-text {
-      font-size: 16px;
-    }
-
-    &__item-image {
-      width: 500px;
-      margin-top: 10px;
+    &__title {
+      font-size: 26px;
+      padding: 0 0 10px 40px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .projects {
-    padding: 0 80px 40px 80px;
-
-    &__item {
-      width: 400px;
-      margin-right: 20px;
-    }
-
-    &__item-image {
-      width: 400px;
-      height: 300px;
-    }
-
-    &__item-image-wrap {
-      width: 400px;
-      height: 460px;
-    }
-
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
     &__title {
+      margin-top: 30px;
       font-size: 24px;
-    }
-
-    &__item-title {
-      margin-top: 20px;
-    }
-
-    &__describe-text {
-      font-size: 16px;
     }
   }
 }

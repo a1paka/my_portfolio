@@ -1,0 +1,19 @@
+.page-main {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

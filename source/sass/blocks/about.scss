@@ -1,6 +1,6 @@
 .about {
   margin: 40px 0 0 0;
-  padding: 0 20px;
+  padding: 0;
 
   &__title {
     margin: 0;
@@ -23,68 +23,55 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 0 40px;
+    margin: 0;
 
     &__wrapper {
       position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-top: 10px;
+      margin: 0;
+    }
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 70px;
-        height: 2px;
-        background-color: $another-color;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
-      }
+    &__text-main {
+      margin: 0 40px;
     }
 
     &__text-wrapper,
     &__photo-wrapper {
       width: 50%;
+      margin: 0;
     }
     
     &__photo {
-      width: 300px;
-      height: 290px;
-      margin: 0;
-      padding: 0;
-      float: right;
+      width: 384px;
+      height: 360px;
     }
 
     &__text {
       font-size: 15px;
-      margin-top: 25px;
-      padding-right: 40px;
+      margin-top: 10px;
+      padding: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 80px;
-  
-    &__title {
-      font-size: 24px;
+    margin: 0;
+    padding: 0;
+
+    &__text-wrapper {
+      width: 400px;
     }
 
     &__text {
-      font-size: 18px;
-    }
-
-    &__photo-wrapper {
-      display: flex;
-      justify-content: center;
+      font-size: 16px;
     }
 
     &__photo {
-      width: 360px;
-      height: 350px;
+      width: 400px;
+      height: 370px;
     }
   }
 }
