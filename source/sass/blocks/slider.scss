@@ -1,4 +1,6 @@
 .slider {
+  position: relative;
+
   &__slide-wrapper {
     position: relative;
     width: 280px;
@@ -30,6 +32,7 @@
 }
 
 .slider .swiper-pagination-bullets {
+  position: absolute;
   bottom: 0;
 }
 
@@ -38,13 +41,18 @@
     &__slide-wrapper {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       margin: 0;
+      padding-bottom: 20px;
     }
 
     &__image {
       order: 2;
       width: 384px;
+      display: block;
+      overflow: hidden;
     }
 
     &__item-image {

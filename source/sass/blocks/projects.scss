@@ -1,9 +1,9 @@
 .projects {
   margin: 40px 0 0 0;
-  padding: 0;
+  padding: 0 20px;
 
   &__title {
-    padding-bottom: 5px;
+    padding: 0 0 5px 0;
     border-bottom: 1px solid #ffa577;
   }
 }
@@ -14,7 +14,8 @@
 
     &__title {
       font-size: 26px;
-      padding: 0 0 10px 40px;
+      padding: 0 0 5px 0;
+      text-align: center;
     }
   }
 }
@@ -23,7 +24,8 @@
   .projects {
     &__title {
       margin-top: 30px;
-      font-size: 24px;
+      font-size: 30px;
+      padding: 0 0 15px 0;
     }
   }
 }

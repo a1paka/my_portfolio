@@ -1,3 +1,5 @@
+'use strict'
+
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.main-nav'),
   menuItem = document.querySelectorAll('.main-nav__item'),
@@ -21,4 +23,7 @@ new Swiper(".slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: false,
 });
